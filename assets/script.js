@@ -2,9 +2,7 @@ var baseUrl = "https://api.coinranking.com/v2/coins"
 var proxyUrl = "https://cors-anywhere.herokuapp.com/"
 var apiKey = "coinrankingdfa261fe08b063ff065d629eeffaa2e6d7911c62340a941a"
 
-var apiUrl = `${proxyUrl}${baseUrl}`;
-console.log(apiUrl);
-
+//fetching data from the API and converting it to JSON format 
 fetch(`${proxyUrl}${baseUrl}`, { 
     method: 'GET',
     headers: {
@@ -13,15 +11,19 @@ fetch(`${proxyUrl}${baseUrl}`, {
       'Access-Control-Allow-Origin': "*"
     }
 })
+  //getting the response from the API and converting it to JSON format and then to an object 
   .then((response) => {
     if (response.ok) {
       response.json().then((json) => {
         console.log(json.data);
         let coinsData = json.data.coins;
-
+//looping through the object and getting the data we need 
         if (coinsData.length > 0) {
           var cryptoCoin = "";
         }
+        
+        //For Loop Starts
+//getting the data from the API and displaying it on the page         
         //For Loop Starts
         coinsData.forEach((coin) => {
           cryptoCoin +="<tr>";
@@ -52,13 +54,15 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td>${coin.totalSupply}</td>`;
           "<tr>";
         });
-
         //For Loop Ends
+
+
+        //displaying the data on the page 
         document.getElementById("data").innerHTML = cryptoCoin;
       });
     }
   })
-
+//catching any errors
   .catch((error) => {
     console.log(error);
   });
