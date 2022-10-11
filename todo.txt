@@ -1,0 +1,15 @@
+html
+-code search results card
+-
+-
+
+css
+-style page
+-style search results card
+-
+
+js
+-api for conversion of cryptocurrency to fiat
+-searchbar activation
+-
+-
