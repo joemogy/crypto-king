@@ -9,42 +9,28 @@
     <title>Crypto Cards</title>
 </head>
 <body>
-    btc eth cards
         <div class="content">
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Bitcoin</h3>
+                            <h3>name</h3>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="./assets/img/bitcoin_btc.svg" alt="bitcoin" class="img-fluid">
+                                    <img src="${coin.iconUrl}" alt="coin iconUrl" class="img-fluid">
                                 </div>
                                 <div class="col-md-6">
-                                    <h3>Price: $<span id="price"></span></h3>
+                                    <h3>Rank : .<span id="rank"></span></h3>
+                                    <h3>symbol : <span id="symbol"></span></h3>
+                                    <h3>name : <span id="name"></span></h3>
+                                    <h3>icon : <span id="icon"></span></h3>
                                     <h3>Market Cap: $<span id="marketCap"></span></h3>
-                                    <h3>24h Change: <span id="change"></span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Ethereum</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <img src="./assets/img/eth.svg" alt="ethereum" class="img-fluid">
-                                </div>
-                                <div class="col-md-6">
-                                    <h3>Price: $<span id="eth-price"></span></h3>
-                                    <h3>Market Cap: $<span id="eth-market-cap"></span></h3>
-                                    <h3>24h Change: <span id="eth-change"></span></h3>
+                                    <h3>price usd: $<span id="priceUsd"></span></h3>
+                                    <h3>price btc: $<span id="priceBtc"></span></h3>
+                                    <h3>24h Change: %<span id="change24h"></span></h3>
+                                    <h3>rank: .<span id="rank"></span></h3>
                                 </div>
                             </div>
                         </div>
