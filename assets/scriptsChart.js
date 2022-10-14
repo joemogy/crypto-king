@@ -109,7 +109,8 @@ $(document).ready(function () {
     $('#cryptoList').change(function () {
         var selectedValueCurrency = parseInt($(this).val());
 
-        //Depends on Value 0-2 respective function gets called. 
+        //Depends on Value respective function gets called.
+
         switch (selectedValueCurrency) {
             case 0:
                 console.log("radio BTC success");
@@ -125,6 +126,74 @@ $(document).ready(function () {
                 console.log("radio LTC success");
                 uuid = litecoin;
                 getCoinData(uuid, time);
+                break;
+            // case 3:
+            //     console.log("radio XRP success");
+            //     uuid = "XRP";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 4:
+            //     console.log("radio BCH success");
+            //     uuid = "BCH";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 5:
+            //     console.log("radio EOS success");
+            //     uuid = "EOS";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 6:
+            //     console.log("radio XLM success");
+            //     uuid = "XLM";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 7:
+            //     console.log("radio ADA success");
+            //     uuid = "ADA";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 8:
+            //     console.log("radio TRX success");
+            //     uuid = "TRX";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 9:
+            //     console.log("radio USDT success");
+            //     uuid = "USDT";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 10:
+            //     console.log("radio LINK success");
+            //     uuid = "LINK";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 11:
+            //     console.log("radio XMR success");
+            //     uuid = "XMR";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 12:
+            //     console.log("radio DASH success");
+            //     uuid = "DASH";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 13:
+            //     console.log("radio NEO success");
+            //     uuid = "NEO";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 14:
+            //     console.log("radio XTZ success");
+            //     uuid = "XTZ";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 15:
+            //     console.log("radio ETC success");
+            //     uuid = "ETC";
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 16:
+
         }
     });
     // ######
