@@ -28,7 +28,7 @@
                         <a class="nav-link" href="./indexCards.html">Cards</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="./indexChart.html">Chart</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
@@ -51,6 +51,7 @@
                 <tr>
                     <!-- <th scope="col">UUID</th> -->
                     <th scope="col">#</th>
+                    <th id="" scope="col">Link</th>
                     <th scope="col">Ticker</th>
                     <th scope="col">CryptoCurrency</th>
                     <!-- <th scope="col">Color</th> -->
@@ -61,8 +62,8 @@
                     <!-- <th scope="col">Listed At</th> -->
                     <th scope="col">%24h</th>
                     <th scope="col">##</th>
-                    <!-- <th scope="col">total</th>
-                    <th scope="col">total24hVolume</th
+                    <th scope="col">total</th>
+                    <!-- <th scope="col">total24hVolume</th
                     <th scope="col">totalCoins</th>
                     <th scope="col">totalExchanges</th>
                     <th scope="col">totalMarketCap</th>
@@ -100,17 +101,6 @@
           }
 
       }
-      //save the value of the search bar in a variable LOCAL STORAGE 
-      
-      function saveSearch() {
-          var search = document.getElementById("myInput").value;
-          localStorage.setItem("search", search);
-        }
-//retrieve the value of the search bar in a variable LOCAL STORAGE 
-      function retrieveSearch() {
-          var search = localStorage.getItem("search");
-          document.getElementById("myInput").value = search;
-        }
         
     </script>
 

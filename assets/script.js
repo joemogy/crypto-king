@@ -19,19 +19,24 @@ fetch(`${proxyUrl}${baseUrl}`, {
         console.log(json.data);
         let coinsData = json.data.coins;
 //looping through the object and getting the data we need 
-        if (coinsData.length > 0) {
-          var cryptoCoin = "";
-        }
 
+
+
+        if (coinsData.length > 0) {
+          var cryptoCoin = "";}
         //For Loop Starts
 //getting the data from the API and displaying it on the page in the table format         
         //For Loop Starts
         coinsData.forEach((coin) => {
-          cryptoCoin +="<tr>"; //but getting link from ${coin.coinrankingUrl}
+          //cryptoCoin +="<tr>";
+          cryptoCoin +='<tr>';
+
 
           // cryptoCoin +=`<td>${coin.uuid}</td>`;
           // cryptoCoin +=`<td>${coin.rank}</td>`; but with backgroung color of coin.color and outline/border of coin.color
           cryptoCoin +=`<td style="background-color:${coin.color};text-shadow: 1px 1px 1px white;outline:3px solid black;">${coin.rank}.</td>`;
+          //cryptoCoin +=`<td style="font-size:18px;color:${coin.color};outline:3px solid ${coin.color}">${coin.symbol}</td>`but with link to href="${coin.coinrankingUrl}"target="_blank">${coin.coinrankingUrl}
+          cryptoCoin +=`<td style="id="myInput2";font-size:18px;color:${coin.color};outline:3px solid ${coin.color}"><a href="${coin.coinrankingUrl}"target="_blank">${coin.symbol}</a></td>`;
 
           // cryptoCoin +=`<td>${coin.name}</td>`;
           // cryptoCoin +=`<td>${coin.symbol}</td>`;
@@ -61,7 +66,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td><a href="${coin.coinrankingUrl}"target="_blank">${coin.coinrankingUrl}</a></td>`;
           // cryptoCoin +=`<td>${coin.14hVolume}</td>`;
           // cryptoCoin +=`<td>${coin.tier}</td>`;
-          // cryptoCoin +=`<td>${coin.total}</td>`;
+          cryptoCoin +=`<td>${coin.total}</td>`;
           // cryptoCoin +=`<td>${coin.total14hVolume}</td>`;
           // cryptoCoin +=`<td>${coin.totalCoins}</td>`;
           // cryptoCoin +=`<td>${coin.totalExchanges}</td>`;
@@ -93,7 +98,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
           table = document.getElementById("myTable");
           tr = table.getElementsByTagName("tr");
           for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
+            td = tr[i].getElementsByTagName("td")[1,2];
             if (td) {
               txtValue = td.textContent || td.innerText;
               if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -107,12 +112,12 @@ fetch(`${proxyUrl}${baseUrl}`, {
         
         //save the value of the search bar to local storage and on page indexCards.html load get the value of the search bar from local storage 
         function saveSearch() {
-          var search = document.getElementById("myInput").value;
+          var search = document.getElementById("myInput2").value;
           localStorage.setItem("search", search);
         }
         function loadSearch() {
           var search = localStorage.getItem("search");
-          document.getElementById("myInput").value = search;
+          document.getElementById("myInput2").value = search;
         }
 //search bar for the table ends
 //refresh page every minute//
