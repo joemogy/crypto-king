@@ -18,7 +18,8 @@ fetch(`${proxyUrl}${baseUrl}`, {
       response.json().then((json) => {
         console.log(json.data);
         let coinsData = json.data.coins;
-//looping through the object and getting the data we need 
+//looping through the object and getting the data we need COIN NAME 
+//and then appending it to the OPTIONS DROPDOWN MENU SECTION 
 
 
 
@@ -49,24 +50,24 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td>${coin.color}</td>`;
 
           // cryptoCoin += `<td>${coin.iconUrl}</td>`but as a image with a width of 33px and height of 33px and a outline of img and a border of table column of 3px solid black
-          cryptoCoin +=`<td href="${coin.coinrankingUrl}"target="_blank"${coin.coinrankingUrl}; style="filter: drop-shadow(0px 0px 1px black);font-size:20px;outline:3px solid black"><img src="${coin.iconUrl}"alt="coin icons"width="33px"height="33px"; style="outline:3px solid ${coin.color}"></td>`;
+          cryptoCoin +=`<td style="font-size:18px;outline:3px solid black"><img src="${coin.iconUrl}"alt="coin icons"width="33px"height="33px"; style="outline:3px solid ${coin.color}"></td>`;
           // cryptoCoin +=`<td>${coin.marketCap}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
-          cryptoCoin +=`<td style="filter: drop-shadow(0px 0px 1px black);font-size:20px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">$${coin.marketCap}$</td>`;
+          cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">$${coin.marketCap}$</td>`;
           // cryptoCoin +=`<td>${coin.price}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
-          cryptoCoin +=`<td style="filter: drop-shadow(0px 0px 1px black);font-size:20px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.price}$</td>`;
+          cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.price}$</td>`;
           // cryptoCoin +=`<td>${coin.btcprice}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
-          cryptoCoin +=`<td style="filter: drop-shadow(0px 0px 1px black);font-size:20px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.btcPrice}BTC</td>`;
+          cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.btcPrice}BTC</td>`;
           // cryptoCoin +=`<td>${coin.listedAt}</td>`;
           // cryptoCoin +=`<td>${coin.change}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
-          cryptoCoin +=`<td style="filter: drop-shadow(0px 0px 1px black);font-size:20px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
+          cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
           // cryptoCoin +=`<td>${coin.rank}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
-          cryptoCoin +=`<td style="filter: drop-shadow(0px 0px 1px black);font-size:20px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">.${coin.rank}.</td>`;
+          cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">.${coin.rank}.</td>`;
           // cryptoCoin +=`<td>${coin.sparkline}</td>`;
           // cryptoCoin +=`<td>${coin.coinrankingUrl}</td>`;but as a link
           // cryptoCoin +=`<td><a href="${coin.coinrankingUrl}"target="_blank">${coin.coinrankingUrl}</a></td>`;
           // cryptoCoin +=`<td>${coin.14hVolume}</td>`;
           // cryptoCoin +=`<td>${coin.tier}</td>`;
-          cryptoCoin +=`<td>${coin.total}</td>`;
+          // cryptoCoin +=`<td>${coin.total}</td>`;
           // cryptoCoin +=`<td>${coin.total14hVolume}</td>`;
           // cryptoCoin +=`<td>${coin.totalCoins}</td>`;
           // cryptoCoin +=`<td>${coin.totalExchanges}</td>`;
@@ -120,6 +121,9 @@ fetch(`${proxyUrl}${baseUrl}`, {
           document.getElementById("myInput2").value = search;
         }
 //search bar for the table ends
+
+
+
 //refresh page every minute//
   setTimeout(function(){ location.reload(); }, 180000);
 

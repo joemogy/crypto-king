@@ -3,7 +3,60 @@ $(document).ready(function () {
     'use strict';
     const bitcoin = "Qwsogvtv82FCd"
     const ethereum = "razxDUgYGNAdQ"
-    const litecoin = "D7B1x_ks7WhV5"
+    const usdt = "HIVsRcGKkPFtW"
+    const usdc = "aKzUVe4Hh_CON"
+    const bnb = "WcwrkfNI4FUAe"
+    const xrp = "-l8Mn2pVlRs-p"
+    const busd = "vSo2fu9iE1s0Y"
+    const ada = "qzawljRxB5bYu"
+    const sol= "zNZHO_Sjf"
+    const doge = "a91GCGd_u96cF"
+    const dot = "25W7FG7om"
+    const matic = "uW2tk-ILY0ii"
+    const shib = "xz24e0BjL"
+    const dai = "MoTuySvg7"
+    const trx = "qUhEFk1I61atv"
+    const weth = "Mtfb0obXVh59u"
+    const uni = "_H5FVG9iW"
+    const wbtc = "x4WXHge-vvFY"
+    const avax = "dvUj0CzDZ"
+    const okb = "PDKcptVnzJTmN"
+    const cake = "ncYFcP709"
+const litecoin = "D7B1x_ks7WhV5"
+    const atom = "Knsels4_Ol-Ny"
+    const ftt = "NfeOYfNcl"
+    const etc = "hnfQfsYfeIGUQ"
+    const xmr = "3mVx2FX_iJFp5"
+    const xlm = "f3iaFeCKEmkaZ"
+    const algo = "TpHE2IShQw-sJ"
+    const btcb = "9_jH48RBW"
+    const cro = "65PHZTpmE55b"
+    const bch = "ZlZpzOJo43mIo"
+    const ens = "SbWqqTui-"
+    const near = "DCrsaMv68"
+    const lunc = "AaQUAs2Mc"
+    const wemix = "08CsQa-Ov"
+    const flow = "QQ0NCmjVq"
+    const qnt = "bauj_21eYVwso"
+    const hbar = "jad286TjB"
+    const fil = "ymQub4fuB"
+    const vet = "FEbS54wxo4oIl"
+    const ht = "DXwP4wF9ksbBO"
+    const mana = "tEf7-dnwV3BXS"
+    const icp = "aMNLwaUbY"
+    const frax = "KfWtaeV1W"
+    const imx = "Z96jIvLU7"
+    const xtz = "fsIbGOEJWbzxG"
+    const egld = "omwkOTglq"
+    const sand = "pxtKbG5rg"
+    const chz = "GSCt2y6YSgO26"
+    const ldo = "Pe93bIOD2"
+
+
+
+
+    // Define currency names
+
     var uuid = bitcoin;
     // Define timeframe code
     var time = "24h";
@@ -35,6 +88,12 @@ $(document).ready(function () {
                 }
             })
     }
+                    // select crypto currency to display on html
+                    // looping through the object and getting the data we need COIN NAME and then appending it to the OPTIONS DROPDOWN MENU SECTION and then we are calling the handlerFunction to get the data for the graph
+
+
+
+
     function handlerFunction(data) {
         console.log(data);
         if (myChart) {
@@ -123,77 +182,247 @@ $(document).ready(function () {
                 getCoinData(uuid, time);
                 break;
             case 2:
-                console.log("radio LTC success");
+                console.log("radio  success");
+                uuid = usdt;
+                getCoinData(uuid, time);
+                break;
+            case 3:
+                console.log("radio  success");
+                uuid = usdc;
+                getCoinData(uuid, time);
+                break;
+            case 4:
+                console.log("radio  success");
+                uuid = bnb;
+                getCoinData(uuid, time);
+                break;
+            case 5:
+                console.log("radio  success");
+                uuid = xrp;
+                getCoinData(uuid, time);
+                break;
+            case 6:
+                console.log("radio  success");
+                uuid = busd;
+                getCoinData(uuid, time);
+                break;
+            case 7:
+                console.log("radio  success");
+                uuid = ada;
+                getCoinData(uuid, time);
+                break;
+            case 8:
+                console.log("radio  success");
+                uuid = sol;
+                getCoinData(uuid, time);
+                break;
+            case 9:
+                console.log("radio  success");
+                uuid = doge;
+                getCoinData(uuid, time);
+                break;
+            case 10:
+                console.log("radio  success");
+                uuid = dot;
+                getCoinData(uuid, time);
+                break;
+            case 11:
+                console.log("radio  success");
+                uuid = matic;
+                getCoinData(uuid, time);
+                break;
+            case 12:
+                console.log("radio  success");
+                uuid = shib;
+                getCoinData(uuid, time);
+                break;
+            case 13:
+                console.log("radio  success");
+                uuid = dai;
+                getCoinData(uuid, time);
+                break;
+            case 14:
+                console.log("radio  success");
+                uuid = trx;
+                getCoinData(uuid, time);
+                break;
+            case 15:
+                console.log("radio  success");
+                uuid = weth;
+                getCoinData(uuid, time);
+                break;
+            case 16:
+                console.log("radio  success");
+                uuid = uni;
+                getCoinData(uuid, time);
+                break;
+            case 17:
+                console.log("radio  success");
+                uuid = wbtc;
+                getCoinData(uuid, time);
+                break;
+            case 18:
+                console.log("radio  success");
+                uuid = avax;
+                getCoinData(uuid, time);
+                break;
+            case 19:
+                console.log("radio  success");
+                uuid = okb;
+                getCoinData(uuid, time);
+                break;
+            case 20:
+                console.log("radio  success");
+                uuid = cake;
+                getCoinData(uuid, time);
+                break;
+            case 21:
+                console.log("radio  success");
                 uuid = litecoin;
                 getCoinData(uuid, time);
                 break;
-            // case 3:
-            //     console.log("radio XRP success");
-            //     uuid = "XRP";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 4:
-            //     console.log("radio BCH success");
-            //     uuid = "BCH";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 5:
-            //     console.log("radio EOS success");
-            //     uuid = "EOS";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 6:
-            //     console.log("radio XLM success");
-            //     uuid = "XLM";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 7:
-            //     console.log("radio ADA success");
-            //     uuid = "ADA";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 8:
-            //     console.log("radio TRX success");
-            //     uuid = "TRX";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 9:
-            //     console.log("radio USDT success");
-            //     uuid = "USDT";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 10:
-            //     console.log("radio LINK success");
-            //     uuid = "LINK";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 11:
-            //     console.log("radio XMR success");
-            //     uuid = "XMR";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 12:
-            //     console.log("radio DASH success");
-            //     uuid = "DASH";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 13:
-            //     console.log("radio NEO success");
-            //     uuid = "NEO";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 14:
-            //     console.log("radio XTZ success");
-            //     uuid = "XTZ";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 15:
-            //     console.log("radio ETC success");
-            //     uuid = "ETC";
-            //     getCoinData(uuid, time);
-            //     break;
-            // case 16:
-
+            case 22:
+                console.log("radio  success");
+                uuid = atom;
+                getCoinData(uuid, time);
+                break;
+            case 23:
+                console.log("radio  success");
+                uuid = fit;
+                getCoinData(uuid, time);
+                break;
+            case 24:
+                console.log("radio  success");
+                uuid = etc;
+                getCoinData(uuid, time);
+                break;
+            case 25:
+                console.log("radio  success");
+                uuid = xmr;
+                getCoinData(uuid, time);
+                break;
+            case 26:
+                console.log("radio  success");
+                uuid = xlm;
+                getCoinData(uuid, time);
+                break;
+            case 27:
+                console.log("radio  success");
+                uuid = algo;
+                getCoinData(uuid, time);
+                break;
+            case 28:
+                console.log("radio  success");
+                uuid = btcb;
+                getCoinData(uuid, time);
+                break;
+            case 29:
+                console.log("radio  success");
+                uuid = cro;
+                getCoinData(uuid, time);
+                break;
+            case 30:
+                console.log("radio  success");
+                uuid = bch;
+                getCoinData(uuid, time);
+                break;
+            case 31:
+                console.log("radio  success");
+                uuid = ens;
+                getCoinData(uuid, time);
+                break;
+            case 32:
+                console.log("radio  success");
+                uuid = near;
+                getCoinData(uuid, time);
+                break;
+            case 33:
+                console.log("radio  success");
+                uuid = lunc;
+                getCoinData(uuid, time);
+                break;
+            case 34:
+                console.log("radio  success");
+                uuid = wemix;
+                getCoinData(uuid, time);
+                break;
+            case 35:
+                console.log("radio  success");
+                uuid = flow;
+                getCoinData(uuid, time);
+                break;
+            case 36:
+                console.log("radio  success");
+                uuid = qnt;
+                getCoinData(uuid, time);
+                break;
+            case 37:
+                console.log("radio  success");
+                uuid = hbar;
+                getCoinData(uuid, time);
+                break;
+            case 38:
+                console.log("radio  success");
+                uuid = fil;
+                getCoinData(uuid, time);
+                break;
+            case 39:
+                console.log("radio  success");
+                uuid = vet;
+                getCoinData(uuid, time);
+                break;
+            case 40:
+                console.log("radio  success");
+                uuid = ht;
+                getCoinData(uuid, time);
+                break;
+            case 41:
+                console.log("radio  success");
+                uuid = mana;
+                getCoinData(uuid, time);
+                break;
+            case 42:
+                console.log("radio  success");
+                uuid = icp;
+                getCoinData(uuid, time);
+                break;
+            case 43:
+                console.log("radio  success");
+                uuid = frax;
+                getCoinData(uuid, time);
+                break;
+            case 44:
+                console.log("radio  success");
+                uuid = imx;
+                getCoinData(uuid, time);
+                break;
+            case 45:
+                console.log("radio  success");
+                uuid = xtz;
+                getCoinData(uuid, time);
+                break;
+            case 46:
+                console.log("radio  success");
+                uuid = egld;
+                getCoinData(uuid, time);
+                break;
+            case 47:
+                console.log("radio  success");
+                uuid = sand;
+                getCoinData(uuid, time);
+                break;
+            case 48:
+                console.log("radio  success");
+                uuid = chz;
+                getCoinData(uuid, time);
+                break;
+            case 49:
+                console.log("radio  success");
+                uuid = ldo;
+                getCoinData(uuid, time);
+                
+                                        
+                
         }
     });
     // ######
