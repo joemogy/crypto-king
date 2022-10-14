@@ -22,7 +22,7 @@ $(document).ready(function () {
     const avax = "dvUj0CzDZ"
     const okb = "PDKcptVnzJTmN"
     const cake = "ncYFcP709"
-const litecoin = "D7B1x_ks7WhV5"
+    const litecoin = "D7B1x_ks7WhV5"
     const atom = "Knsels4_Ol-Ny"
     const ftt = "NfeOYfNcl"
     const etc = "hnfQfsYfeIGUQ"
