@@ -301,126 +301,126 @@ $(document).ready(function () {
                 uuid = xmr;
                 getCoinData(uuid, time);
                 break;
-            case 26:
-                console.log("radio Stellar success");
-                uuid = xlm;
-                getCoinData(uuid, time);
-                break;
-            case 27:
-                console.log("radio Algorand success");
-                uuid = algo;
-                getCoinData(uuid, time);
-                break;
-            case 28:
-                console.log("radio Bitcoin BEP2 success");
-                uuid = btcb;
-                getCoinData(uuid, time);
-                break;
-            case 29:
-                console.log("radio Cronos success");
-                uuid = cro;
-                getCoinData(uuid, time);
-                break;
-            case 30:
-                console.log("radio Bitcoin Cash success");
-                uuid = bch;
-                getCoinData(uuid, time);
-                break;
-            case 31:
-                console.log("radio EnergySwap success");
-                uuid = ens;
-                getCoinData(uuid, time);
-                break;
-            case 32:
-                console.log("radio NEAR Protocol success");
-                uuid = near;
-                getCoinData(uuid, time);
-                break;
-            case 33:
-                console.log("radio Terra Classic success");
-                uuid = lunc;
-                getCoinData(uuid, time);
-                break;
-            case 34:
-                console.log("radio WEMIX TOKEN success");
-                uuid = wemix;
-                getCoinData(uuid, time);
-                break;
-            case 35:
-                console.log("radio Flow success");
-                uuid = flow;
-                getCoinData(uuid, time);
-                break;
-            case 36:
-                console.log("radio Quant success");
-                uuid = qnt;
-                getCoinData(uuid, time);
-                break;
-            case 37:
-                console.log("radio Hedera success");
-                uuid = hbar;
-                getCoinData(uuid, time);
-                break;
-            case 38:
-                console.log("radio Filecoin success");
-                uuid = fil;
-                getCoinData(uuid, time);
-                break;
-            case 39:
-                console.log("radio VeChain success");
-                uuid = vet;
-                getCoinData(uuid, time);
-                break;
-            case 40:
-                console.log("radio Huobi Token success");
-                uuid = ht;
-                getCoinData(uuid, time);
-                break;
-            case 41:
-                console.log("radio Decentraland success");
-                uuid = mana;
-                getCoinData(uuid, time);
-                break;
-            case 42:
-                console.log("radio Internet Computer (DFINITY) success");
-                uuid = icp;
-                getCoinData(uuid, time);
-                break;
-            case 43:
-                console.log("radio Frax success");
-                uuid = frax;
-                getCoinData(uuid, time);
-                break;
-            case 44:
-                console.log("radio Immutable X success");
-                uuid = imx;
-                getCoinData(uuid, time);
-                break;
-            case 45:
-                console.log("radio Tezos success");
-                uuid = xtz;
-                getCoinData(uuid, time);
-                break;
-            case 46:
-                console.log("radio Elrond success");
-                uuid = egld;
-                getCoinData(uuid, time);
-                break;
-            case 47:
-                console.log("radio The Sandbox success");
-                uuid = sand;
-                getCoinData(uuid, time);
-                break;
-            case 48:
-                console.log("radio Chiliz success");
-                uuid = chz;
-                getCoinData(uuid, time);
-                break;
-            case 49:
-                console.log("radio Lido DAO Token success");
-                uuid = ldo;
-                getCoinData(uuid, time);
-                break;
+            // case 26:
+            //     console.log("radio Stellar success");
+            //     uuid = xlm;
+            //     getCoinData(uuid, time);
+            //     break;
+            // // case 27:
+            //     console.log("radio Algorand success");
+            //     uuid = algo;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 28:
+            //     console.log("radio Bitcoin BEP2 success");
+            //     uuid = btcb;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 29:
+            //     console.log("radio Cronos success");
+            //     uuid = cro;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 30:
+            //     console.log("radio Bitcoin Cash success");
+            //     uuid = bch;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 31:
+            //     console.log("radio EnergySwap success");
+            //     uuid = ens;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 32:
+            //     console.log("radio NEAR Protocol success");
+            //     uuid = near;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 33:
+            //     console.log("radio Terra Classic success");
+            //     uuid = lunc;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 34:
+            //     console.log("radio WEMIX TOKEN success");
+            //     uuid = wemix;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 35:
+            //     console.log("radio Flow success");
+            //     uuid = flow;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 36:
+            //     console.log("radio Quant success");
+            //     uuid = qnt;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 37:
+            //     console.log("radio Hedera success");
+            //     uuid = hbar;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 38:
+            //     console.log("radio Filecoin success");
+            //     uuid = fil;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 39:
+            //     console.log("radio VeChain success");
+            //     uuid = vet;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 40:
+            //     console.log("radio Huobi Token success");
+            //     uuid = ht;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 41:
+            //     console.log("radio Decentraland success");
+            //     uuid = mana;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 42:
+            //     console.log("radio Internet Computer (DFINITY) success");
+            //     uuid = icp;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 43:
+            //     console.log("radio Frax success");
+            //     uuid = frax;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 44:
+            //     console.log("radio Immutable X success");
+            //     uuid = imx;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 45:
+            //     console.log("radio Tezos success");
+            //     uuid = xtz;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 46:
+            //     console.log("radio Elrond success");
+            //     uuid = egld;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 47:
+            //     console.log("radio The Sandbox success");
+            //     uuid = sand;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 48:
+            //     console.log("radio Chiliz success");
+            //     uuid = chz;
+            //     getCoinData(uuid, time);
+            //     break;
+            // case 49:
+            //     console.log("radio Lido DAO Token success");
+            //     uuid = ldo;
+            //     getCoinData(uuid, time);
+            //     break;
             
             }
         });
