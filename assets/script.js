@@ -36,7 +36,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td>${coin.rank}</td>`; but with backgroung color of coin.color and outline/border of coin.color
           cryptoCoin +=`<td style="background-color:${coin.color};text-shadow: 1px 1px 1px white;outline:3px solid black;">${coin.rank}.</td>`;
           //cryptoCoin +=`<td style="font-size:18px;color:${coin.color};outline:3px solid ${coin.color}">${coin.symbol}</td>`but with link to href="${coin.coinrankingUrl}"target="_blank">${coin.coinrankingUrl}
-          cryptoCoin +=`<td style="id="myInput2";font-size:18px;color:${coin.color};outline:3px solid ${coin.color}"><a href="${coin.coinrankingUrl}"target="_blank">${coin.symbol}</a></td>`;
+          // cryptoCoin +=`<td style="id="myInput2";font-size:18px;color:${coin.color};outline:3px solid ${coin.color}"><a href="${coin.coinrankingUrl}"target="_blank">${coin.symbol}</a></td>`;
 
           // cryptoCoin +=`<td>${coin.name}</td>`;
           // cryptoCoin +=`<td>${coin.symbol}</td>`;
