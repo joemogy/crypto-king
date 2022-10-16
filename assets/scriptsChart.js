@@ -306,7 +306,7 @@ $(document).ready(function () {
                 uuid = xlm;
                 getCoinData(uuid, time);
                 break;
-            // case 27:
+            case 27:
                 console.log("radio Algorand success");
                 uuid = algo;
                 getCoinData(uuid, time);
@@ -421,7 +421,6 @@ $(document).ready(function () {
                 uuid = ldo;
                 getCoinData(uuid, time);
                 break;
-            
             }
         });
     // ######

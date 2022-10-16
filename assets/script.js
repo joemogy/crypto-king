@@ -1,5 +1,8 @@
+//api
 var baseUrl = "https://api.coinranking.com/v2/coins?limit=1000"
+//proxy url server
 var proxyUrl = "https://cors-anywhere.herokuapp.com/"
+//api key
 var apiKey = "coinrankingdfa163fe08b063ff065d619eeffaa1e6d7933c61340a943a"
 
 //fetching data from the API and converting it to JSON format 
@@ -65,7 +68,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td>${coin.sparkline}</td>`;
           // cryptoCoin +=`<td>${coin.coinrankingUrl}</td>`;but as a link
           // cryptoCoin +=`<td><a href="${coin.coinrankingUrl}"target="_blank">${coin.coinrankingUrl}</a></td>`;
-          // cryptoCoin +=`<td>${coin.14hVolume}</td>`;
+          // cryptoCoin +=`<td>${stat.14hVolume}</td>`;
           // cryptoCoin +=`<td>${coin.tier}</td>`;
           // cryptoCoin +=`<td>${coin.total}</td>`;
           // cryptoCoin +=`<td>${coin.total14hVolume}</td>`;
