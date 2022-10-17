@@ -51,10 +51,6 @@ $(document).ready(function () {
     const sand = "pxtKbG5rg"
     const chz = "GSCt2y6YSgO26"
     const ldo = "Pe93bIOD2"
-
-
-
-
     // Define currency names
 
     var uuid = bitcoin;
@@ -90,9 +86,6 @@ $(document).ready(function () {
     }
                     // select crypto currency to display on html
                     // looping through the object and getting the data we need COIN NAME and then appending it to the OPTIONS DROPDOWN MENU SECTION and then we are calling the handlerFunction to get the data for the graph
-
-
-
 
     function handlerFunction(data) {
         console.log(data);
