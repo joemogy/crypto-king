@@ -22,7 +22,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
         console.log(json.data);
         let coinsData = json.data.coins;
 
-        var price = Math.round((parseFloat(coinsData.price) + Number.EPSILON) * 100) / 100;
+       
 //looping through the object and getting the data we need COIN NAME 
 //and then appending it to the OPTIONS DROPDOWN MENU SECTION 
         
@@ -67,9 +67,9 @@ fetch(`${proxyUrl}${baseUrl}`, {
           // cryptoCoin +=`<td>${coin.change}</td>`; BUT WITH BACKGROUND COLOR OF THE COIN COLOR AND TEXT COLOR OF THE black COLOR with text shadow of white 1px 1px 1px and outline of 3px solid black
           // cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:${coin.color};color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`; IF coin.change is greater than 0 then background color of green and text color of black and if coin.change is less than 0 then background color of red and text color of RED 
           if(coin.change > 0){
-            cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:green;color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
+            cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:#66ff33;color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
           }else{
-            cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color:red;color:red;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
+            cryptoCoin +=`<td style="filter: drop-shadow(1px 1px 1px black);font-size:18px;background-color: #ff3333;color:black;text-shadow: 1px 1px 1px white;outline:3px solid black">${coin.change}%</td>`;
           }
           
 
