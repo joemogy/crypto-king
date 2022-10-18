@@ -12,7 +12,8 @@ chart.js
 server hosted at https://cors-anywhere.herokuapp.com/
 to request temporary access to the demo server at https://cors-anywhere.herokuapp.com/corsdemo
 
-deplayed live to [GitHub Pages](https://joemogy.github.io/crypto-king/index.html)
+deplayed to [Deployed Page](https://joemogy.github.io/crypto-king/index.html)
+[joemogy.github.io/crypto-king/index.html](https://joemogy.github.io/crypto-king/index.html)
 
 ## screenshots
 
