@@ -415,7 +415,9 @@ $(document).ready(function () {
                 getCoinData(uuid, time);
                 break;
             }
-        });
+        }); 
+
+
     // ######
     // Timeframe selector
     $('input:radio[name=options]').on("click", function () {

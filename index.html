@@ -93,6 +93,20 @@
           }
 
       }
+      //search bar above add to local storage 
+
+      //add to local storage
+      function addToLocalStorage() {
+          let data = document.getElementById("data").innerHTML;
+          localStorage.setItem("data", data);
+      }
+      //add to local storage above
+
+      //get from local storage
+      function getFromLocalStorage() {
+          let data = localStorage.getItem("data");
+          document.getElementById("data").innerHTML = data;
+      }
         
     </script>
 
