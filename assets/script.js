@@ -1,7 +1,7 @@
 //api
 var baseUrl = "https://api.coinranking.com/v2/coins?limit=1000"
 //proxy url server
-var proxyUrl = "https://cors-anywhere.herokuapp.com/"
+var proxyUrl = "coinranking1.p.rapidapi.com"
 //api key
 var apiKey = "coinrankingdfa163fe08b063ff065d619eeffaa1e6d7933c61340a943a"
 
